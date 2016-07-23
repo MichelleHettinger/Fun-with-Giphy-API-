@@ -2,8 +2,23 @@
 	border: 2px black solid;
 }
 #animalButtons {
-	height: 100px;
+	height: 130px;
 }
 #addAnimal {
 	margin-top: 15px;
+	width: 76px;
+}
+button {
+	margin:5px;
+}
+
+img {
+	height: 200px;
+	width: 200px;
+}
+
+.adjustGif{
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 10px;
 }
