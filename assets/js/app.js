@@ -4,7 +4,6 @@
  var addAnimalButton = $("#addAnimal");
  var gifDiv = $("#animals");
 
-
  	//When animal button is clicked...
  	addAnimalButton.on("click", function(){
 
@@ -19,7 +18,6 @@
     	newButton.html(animal);
 
     	animalButtonsList.append(newButton);
-
 
 	 	//When any button tag is clicked...
 	 	$("button").on("click", function(){
@@ -51,14 +49,12 @@
 					imageTag.attr("data-still", results[i].images.fixed_height_still.url);
 					imageTag.attr("data-animate", results[i].images.fixed_height.url);
 
-
 					//Append both rating and the gif to the page
 					animalDiv.append(p);
 					animalDiv.append(imageTag);
 					animalDiv.addClass("adjustGif");
 
 					gifDiv.prepend(animalDiv);
-
 				}
 
 				//Toggle for playing and stopping the gif animation
