@@ -1,3 +1,9 @@
 .box {
 	border: 2px black solid;
 }
+#animalButtons {
+	height: 100px;
+}
+#addAnimal {
+	margin-top: 15px;
+}
