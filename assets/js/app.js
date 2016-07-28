@@ -47,7 +47,7 @@ $(document).ready(function(){
 
 	 		//The search terms are set to the data-animal value set in the addAnimalButton button
 			var animalSearch = $(this).data('animal');
-	 		var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animalSearch + "&api_key=dc6zaTOxFJmzC&limit=10";
+	 		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animalSearch + "&api_key=dc6zaTOxFJmzC&limit=10";
 
 
 			$.ajax({url: queryURL, method: 'GET'}).done(function(response){
