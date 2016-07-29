@@ -1,14 +1,15 @@
-//Assign HTML elements to variables
-var animalButtonsList = $("#animalButtons");
-var animalInput = $("#animal-input");
-var addAnimalButton = $("#addAnimal");
-var gifDiv = $("#animals");
-var animalsArray = [];
-
-
 $(document).ready(function(){
+
+	//Assign HTML elements to variables
+	var animalButtonsList = $("#animalButtons");
+	var animalInput = $("#animal-input");
+	var addAnimalButton = $("#addAnimal");
+	var gifDiv = $("#animals");
+	var animalsArray = [];
+
  	//When animal button is clicked...
  	addAnimalButton.on("click", function(){
+
  		//Empty out the previous list of buttons
  		//Animal becomes the string that was typed in 		
  		animalButtonsList.empty();
@@ -21,7 +22,9 @@ $(document).ready(function(){
 			}
 		}
 
+		//Animal is always pushed into the array and then the text input box cleared out.
 		animalsArray.push(animal);
+	 	animalInput.val("");
 
     	console.log(animal);
     	console.log(animalsArray);
@@ -96,6 +99,10 @@ $(document).ready(function(){
 				})
 			})
 	 	})
+
+	 	//Can now press enter/return on the input box without the page refreshing
+	 	return false;
+
 
  	})
 
